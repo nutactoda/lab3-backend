@@ -1,0 +1,8 @@
+{% macro render_matrix(matrix, n, m) %}
+    {% for row in range(n) %}
+        {% for column in range(m) %}
+            <input type="text" value= {{ matrix[row][column] }} >
+        {% endfor %}
+    <br>
+    {% endfor %}
+{% endmacro %}

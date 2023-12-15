@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title> Задание 1 </title>
+        <style> input { width: 40px; } </style>
+        {% import "macros.html" as macros %}
+    </head>
+    <body>
+        <form>
+            {{ macros.render_matrix(matrix, n, m) }}
+        </form>
+    </body>
+</html>
